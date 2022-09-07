@@ -1,0 +1,406 @@
+@font-face {
+    font-family: 'JSongMyung-Regular-KO';
+    src: url('/lyj/font/JSongMyung-Regular-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GLight';
+    src: url('/lyj/font/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GMedium';
+    src: url('/lyj/font/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Layout */
+
+.inner{ width:1280px; margin: 0 auto;}
+#header { 
+    position:relative; 
+    border-bottom:1px solid #fff;  
+    z-index: 1; 
+    padding: 2rem; 
+    width: auto; 
+    font-family: 'JSongMyung-Regular-KO';
+}
+.position ul { display: flex;}
+#main img, #header img, #footer img { display: block; }
+#contents{
+    font-family: GMedium;
+    float: none;
+    width: auto;
+}
+.xans-layout-category .position > ul > li > a:hover, .xans-layout-category .position > ul > li.selected > a, .xans-layout-category .position > ul > li.on > a{
+    color: #986d43 !important;
+}
+/*header*/
+
+#header:after {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 0;
+    border-top: 0; 
+}
+button {
+    overflow: visible;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    background: transparent;
+}
+
+.mypage{
+    padding-left: 1rem;
+    transform: translate(10px, 15px);
+}
+
+
+
+#header .topArea{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .hd_wrap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+#header .xans-layout-category{
+    margin: 0;
+}
+
+#header input[type=text], input[type=password] {
+    border: 1px solid transparent;
+    border-bottom: 2px solid #000;
+    background: transparent;
+    margin-right: 0.5rem;
+} 
+
+#header .xans-layout-category .position > ul > li > a{
+    font-size: 1.1rem;
+    padding: 0 1rem;
+}
+
+
+
+#header .hd_wrap{
+    position: relative;
+}
+
+#header .event .eventMenu{
+    display: block;
+    opacity: 0;
+    transition: .5s;
+    line-height: 2;
+    position: absolute;
+    top: 100%;
+    font-size: 0.9rem;
+    padding: 1rem;
+    left: -1rem;
+    white-space: nowrap;
+    background-color: #fff;
+
+}
+
+#header .event:hover .eventMenu{
+    opacity: 1;
+}
+
+
+#header #text{
+    display: none;
+}
+
+.mypage_icon{
+    font-size: 1rem;
+    position: absolute;
+    display: block;
+    width: 6rem;
+    line-height: 2;
+    transform: translate(-50px, 11px);
+    opacity: 0;
+    transition: 0.5s;
+    padding: 1rem;
+    background: #fff;
+    display: flex;
+    white-space: pre-line;
+    font-family: 'JSongMyung-Regular-KO';
+    justify-content: center;
+}
+
+.mypage > button:hover .mypage_icon {
+    opacity: 1;
+}
+
+.searchDiv{
+    left: -1047px;
+    right: 0;
+    top: 100%;
+    background: white;
+    padding: 10rem;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    width: 99rem;
+    overflow: hidden;
+    
+  }
+  
+  .show .searchDiv{
+    opacity: 1;
+    visibility: visible;
+  }
+  .show{
+    overflow-y: hidden;
+  }
+  .show #searchBtn{
+    background-color: transparent;
+  }
+
+
+/*contents*/
+
+.icon .button{
+    display: flex;
+}
+.ec-base-product .spec li, .ec-base-product .prdList .description .name{
+    text-align: center;
+}
+.ec-base-product .prdList .description .name a{
+    font-weight: bold; 
+    font-size: 2rem;
+}
+#main #boardArea{
+    display: none;
+}
+.main_01 .ec-base-product .icon, .main_03 .ec-base-product .icon{
+    display: none;
+}
+
+.main_01 .ec-base-product .title h2, .main_02 .ec-base-product .title h2, .main_03 .ec-base-product .title h2{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+}
+
+
+/*main_01*/
+.main_01{
+    border: 3rem solid #fff;
+    padding: 1rem 0;
+}
+
+.main_01 .ec-base-product{
+    padding: 2rem 0 2rem 2rem;
+    margin: 0;
+}
+/*배너2*/
+.banner2{
+    padding: 0 3rem;
+
+}
+.banner2 p{
+    font-size: 10rem;
+    color: #000;
+}
+.banner2 .b_s1{
+    text-align: left;
+    transform: translate(3rem,13rem);
+}
+.banner2 .b_s2{
+    text-align: right;
+    transform: translate(-2rem,-18rem);
+}
+
+/*main02 */
+.main_02 > .ec-base-product {
+    padding: 0 3rem 11rem 3rem;
+}
+
+.main_02 > .ec-base-product .prdList .description{
+    margin: 0 auto;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    width: 438px;
+    padding: 10.7rem 0;
+    top: 10px;
+    left: 17px;
+    background-color: #27303f;
+    opacity: 0;
+    transition: 0.6s;
+}
+
+.main_02 > .ec-base-product .prdList .description:hover{
+    opacity: .7;
+}
+
+.main_02 > .ec-base-product ul.grid4 > li .description .icon .button{
+    display: flex;
+    justify-content: center;
+}
+
+.main_02 > .ec-base-product img{
+    margin: 10px;
+}
+
+
+/*banner3*/
+.banner3{
+    padding: 3rem 0;
+}
+
+/*main03*/
+.main_03{
+    border: 3rem solid #fff;
+    border-right: 0;
+    padding: 1rem 0;
+}
+
+.main_03 .ec-base-product ul.grid2 li .thumbnail {
+    float: none;
+    width: 100%;
+    margin: 0;
+}
+.main_03 .ec-base-product ul.grid2 li .description {
+    float: none;
+    width: auto;
+    padding: 0;
+}
+.main_03 .ec-base-product{
+    margin: auto;
+    width: 80%;
+}
+.main_03 .ec-base-product .prdList .thumbnail .prdImg {
+    padding: 1rem;
+    width: 75%;
+    margin: auto;
+}
+.main_03 .ec-base-product .prdList > li {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+.main_03 .ec-base-product .prdList .thumbnail .wish{
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    cursor: pointer;
+}
+
+/*footer*/
+#footer:before, #footer .inner:after{
+    display: none;
+}
+#footer{
+    background-image: url(/lyj/img/footer.jpg);
+    background-repeat: no-repeat;
+    margin: 0;
+    border: 0;
+    font-family: 'JSongMyung-Regular-KO';
+}
+#footer .inner{
+    width: auto;
+    margin: 0 auto;
+}
+
+#footer .xans-layout-logobottom{
+    float: none;
+    width: 100%;
+    padding: 4rem;
+}
+#footer .xans-layout-logobottom {
+    float: none;
+    width: 100%;
+    padding: 4rem;
+}
+
+#footer .xans-layout-footer{
+    float: none;
+    height: auto; width: auto;
+    flex-direction: column;
+    padding: 0 4rem 4rem 4rem;
+}
+#footer .xans-layout-footer .utilMenu{
+    justify-content: right;
+}
+#footer .xans-layout-footer .utilMenu li{
+    float: none;
+    background: none;
+}
+#footer .xans-layout-footer .utilMenu li a{
+    font-size: 1rem;
+}
+
+#footer .xans-layout-footer .util_bottom {
+    padding: 24px 0;
+    color: #000;
+    line-height: 24px;
+    border-top: 1px solid #757575;
+    font-size: 1rem;
+}
+
+#footer .xans-layout-footer .copyright{
+    /* line-height: 45px; */
+    position: relative;
+    /* left: 0px; */
+    color: #757575;
+    /* height: 45px; */
+    font-size: 1rem;
+}
+#footer .xans-layout-footer .address{
+    padding: 0;
+}
+
+/*기획전*/
+#contents > .xans-project-package > .xans-product-headcategory > p > img{
+    margin: auto;
+}
+
+.ec-base-product .prdList .thumbnail .icon{
+    border: 0;
+}
+
+.xans-project-package .menuCategory, .xans-project-package .title h2, .path li{
+    display: none;
+}
+
+/*layout*/
+#contents .xans-product-normalmenu .function{
+    border: none;
+}
+/* #contents .xans-product-menupackage .title h2 {
+    color: transparent;
+    font-size: 8rem;
+    font-weight: 100;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    position: absolute;
+    left: 0; right: 0;
+    top: 10rem;
+}
+
+#contents .xans-product-menupackage .title{
+    text-align: center;
+} */
+
+#contents .xans-product-normalmenu .function{
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+#contents .xans-product-normalmenu ul#type li a:hover{
+    color: #986d43 !important;
+}

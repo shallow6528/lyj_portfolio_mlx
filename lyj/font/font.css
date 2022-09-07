@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'JSongMyung-Regular-KO';
+    src: url('/lyj/font/JSongMyung-Regular-KO.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GLight';
+    src: url('/lyj/font/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GMedium';
+    src: url('/lyj/font/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GBold';
+    src: url('/lyj/font/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*특정 국가에서 폰트가 적용되지 않으므로 직접 내장해서 사용*/

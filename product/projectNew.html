@@ -1,0 +1,83 @@
+<!--@layout(/layout/basic/main.html)-->
+<div class="inner">
+
+    <div id="boardArea">
+        <div module="board_listpackage_2">
+            
+            <h2><span>자유게시판</span></h2>
+            <div class="ec-base-table typeList gLine">
+                <table border="1" summary="">
+                    <caption>자유 게시판</caption>
+                    <colgroup>
+                        <col style="width:auto" />
+                        <col style="width:100px" />
+                    </colgroup>
+                    <thead class="blind">
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">날짜</th>
+                    </tr>
+                    </thead>
+                    <tbody module="board_list_2">
+                        <!--
+                            $count = 3
+                            $main_list = yes
+                            $subject_cut = 25
+                            $main_list_reply_view = no
+                        -->
+                        <tr class="{$block_target_class}" {$block_data_attr}>
+                            <td class="title"><a href="{$link_board_detail}" class="{$block_target_class}" {$block_data_attr}>{$subject}</a></td>
+                            <td>{$write_date}</td>
+                        </tr>
+                        <tr class="{$block_target_class}" {$block_data_attr}>
+                            <td class="title"><a href="{$link_board_detail}" class="{$block_target_class}" {$block_data_attr}>{$subject}</a></td>
+                            <td>{$write_date}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="more"><a href="/board/free/list.html?board_no=5" class="btnNormal">더보기</a></p>
+        </div>
+    
+        <div module="board_listpackage_6">
+            <!--@css(/css/module/layout/board_listpackage_6.css)-->
+            <h2><span>상품 Q&amp;A</span></h2>
+            <div class="ec-base-table typeList gLine">
+                <table border="1" summary="">
+                    <caption>상품 Q&amp;A</caption>
+                    <colgroup>
+                        <col style="width:auto" />
+                        <col style="width:100px" />
+                    </colgroup>
+                    <thead class="blind">
+                    <tr>
+                        <th scope="col">제목</th>
+                        <th scope="col">날짜</th>
+                    </tr>
+                    </thead>
+                    <tbody module="board_list_6">
+                        <!--
+                            $count = 5
+                            $main_list = yes
+                            $subject_cut = 25
+                            $main_list_reply_view = no
+                        -->
+                        <tr class="{$block_target_class}" {$block_data_attr}>
+                            <td class="title"><a href="{$link_board_detail}" class="{$block_target_class}" {$block_data_attr}>{$subject}</a></td>
+                            <td>{$write_date}</td>
+                        </tr>
+                        <tr class="{$block_target_class}" {$block_data_attr}>
+                            <td class="title"><a href="{$link_board_detail}" class="{$block_target_class}" {$block_data_attr}>{$subject}</a></td>
+                            <td>{$write_date}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="more"><a href="/board/product/list.html?board_no=6" class="btnNormal">더보기</a></p>
+        </div>
+    </div>
+
+
+
+
+</div>
